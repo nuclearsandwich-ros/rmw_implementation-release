@@ -1,0 +1,12 @@
+Source: ros-verystable-rmw-implementation
+Section: misc
+Priority: optional
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libpoco-dev, ros-verystable-ament-cmake, ros-verystable-ament-cmake-python, ros-verystable-ament-lint-auto, ros-verystable-ament-lint-common, ros-verystable-poco-vendor, ros-verystable-rcutils, ros-verystable-rmw, ros-verystable-rmw-connext-cpp, ros-verystable-rmw-cyclonedds-cpp, ros-verystable-rmw-fastrtps-cpp, ros-verystable-rmw-implementation-cmake, ros-verystable-rmw-opensplice-cpp, ros-verystable-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-verystable-rmw-implementation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpoco-dev, ros-verystable-ament-index-python, ros-verystable-poco-vendor, ros-verystable-rmw-implementation-cmake, ros-verystable-ros-workspace, ros-eloquent-rmw-fastrtps-cpp | ros-eloquent-rmw-connext-cpp | ros-eloquent-rmw-cyclonedds-cpp | ros-eloquent-rmw-opensplice-cpp
+Description: The decision which ROS middleware implementation should be used for C++.
