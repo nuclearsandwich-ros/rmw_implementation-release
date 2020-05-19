@@ -1,0 +1,12 @@
+Source: ros-testing-rmw-implementation
+Section: misc
+Priority: optional
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-testing-ament-cmake, ros-testing-ament-lint-auto, ros-testing-ament-lint-common, ros-testing-rcpputils, ros-testing-rcutils, ros-testing-rmw, ros-testing-rmw-connext-cpp, ros-testing-rmw-cyclonedds-cpp, ros-testing-rmw-fastrtps-cpp, ros-testing-rmw-implementation-cmake, ros-testing-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-testing-rmw-implementation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-testing-rcpputils, ros-testing-rcutils, ros-testing-rmw-implementation-cmake, ros-testing-ros-workspace, ros-foxy-rmw-fastrtps-cpp | ros-foxy-rmw-connext-cpp
+Description: The decision which ROS middleware implementation should be used for C++.
